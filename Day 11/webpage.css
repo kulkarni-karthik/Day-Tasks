@@ -1,0 +1,414 @@
+body{
+    font-family: "work Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header .row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #1b1718;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 15px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 56px;
+    width: 56px;
+    margin-right: 10px;
+}
+
+.logo p{
+    font-size: 32px;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+nav ul li .active{
+    background-color: rgb(153, 41, 251);
+    color: white;
+    border-radius: 5px;
+}
+
+    /*--Home Section--*/
+.hero{
+    padding: 80px 60px;
+}
+
+.image{
+    box-sizing: border-box;
+    box-shadow: #353434;
+    border-radius: 10px;
+    padding-left: 50%;
+}
+
+.d1 h1{
+    margin: 0;
+    text-align: left;
+    font-size: 50px;
+}
+
+.d1 p{
+    line-height: 30px;
+}
+
+.d2{
+    background-color: aqua;
+}
+
+/*--About Section--*/
+
+.d4 h2{
+    font-size: 40px;
+}
+
+.d4 p{
+    line-height: 30px;
+    justify-content: center;
+    color: #4a5565;
+}
+
+.btn-1{
+    margin: 0px 13px;
+    padding: 15px 20px;
+    border-radius: 4px;
+    background-color: #9929fb;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-2{
+    border: 1px solid;
+    border-color: #353434;
+    margin: 0px 13px;
+    padding: 15px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+}
+
+.btn-2:hover{
+    color: #9929fb;
+    border-color: #9929fb;
+}
+
+/*--Process Section--*/
+
+.work-process- {
+    padding: 7rem 0rem;
+    max-width: 1270px;
+    margin: 0 auto;
+}
+
+.work-process-header {
+    text-align:left;
+    margin-bottom: 3rem;
+    padding-top: 100px;
+}
+
+.work-process-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align:left;
+}
+
+.work-process-header p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+div .icon {
+    justify-content:left;
+    align-items: center;
+    display: flex;
+
+}
+.work-process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.work-process-item:hover {
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.2); transition: all 0.3s ease-in-out; 
+}
+
+.work-process-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.work-process-item .icon {
+  background-color: #edd8ff80;
+  border-radius: 12px;
+  width: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-process-item.icon svg {
+  width: 36px;
+  height: 36px;
+  color: #9929fb;
+}
+.work-process-item.icon svg :hover{
+  color:#fff;
+  background: #9929fb;
+}
+.work-process-item h2 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.work-process-item p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Portfolio */
+
+.portfolio{
+    padding: 60px 0px;
+}
+
+.portfolio-grid{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+
+}
+
+.portfolio-card{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 700px;
+    transition: 0.2s;
+}
+
+.portfolio-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+.d6 h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+.d6 p{
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #919396;
+}
+
+.card-content{
+    padding: 0px 28px;
+}
+
+.card-content p{
+    text-align: start;
+    letter-spacing: 1px;
+}
+
+.case-btn {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  text-orientation: mixed;
+}
+
+.case-btn:hover {
+  color: #9929fb ;
+  border:1px solid #9929fb;
+}
+
+.more-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more:hover{
+    background-color: #650fa0;
+}
+
+.more{
+    text-decoration: none;
+    background-color: #9929fb;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/*  */
+.projectidea{
+    background-color: #101828;
+    padding: 80px 0px;
+}
+
+.projectidea h1{
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+}
+
+.projectidea p{
+    text-align: center;
+    color: #a5acb5;
+    letter-spacing: 1px;
+    line-height: 30px
+}
+
+.work{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-btn{
+    text-decoration: none;
+    color: #fff;
+    padding: 13px 20px;
+    background-color: #9929fb;
+    border-radius: 5px;
+}
+
+.work-btn:hover{
+    background-color: #650fa0;
+}
+
+/* Blog */
+
+.blog-grid{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.blog-card{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 700px;
+    transition: 0.2s;
+}
+
+.blog-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.d7{
+    padding: 80px 0px;
+}
+
+.heading h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+.heading p{
+    text-align: center;
+    line-height: 30px; 
+    word-spacing: 3px;
+    color:oklch(32.541% 0.00178 285.997);
+}
+
+/* Services */
+
+.services{
+    background-color:#e7e3e4;
+    padding: 150px 40px;
+}
+
+.d8 h2{
+    font-size: 50px;
+}
+
+.d8 p{
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #a5acb5;
+}
+
+.d8 a{
+    text-decoration: none;
+    padding: 13px 20px;
+    background-color: #9929fb;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.user-card{
+    padding: 2rem;
+    width: 600px;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #000;
+    margin-left: 130px;
+}
+
+.user-card:hover{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    border-left: 5px solid #9929fb;
+}
+
+.happy h1{
+    text-align: center;
+}
+
+.happy p{
+    text-align: center;
+    line-height: 30px;
+    word-spacing: 1px;
+}
+
