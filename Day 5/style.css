@@ -1,0 +1,165 @@
+/* General Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0 20px;
+}
+
+/* ---------------- HEADER ---------------- */
+header {
+    background-color: #1e1e2f;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+/* ---------------- NAVIGATION ---------------- */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* ---------------- SECTION STYLES ---------------- */
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: #1e1e2f;
+    margin-bottom: 15px;
+}
+
+/* ---------------- TABLE ---------------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* ---------------- SKILLS ---------------- */
+meter {
+    width: 100%;
+    height: 15px;
+    margin-top: 5px;
+}
+
+/* ---------------- FORM ---------------- */
+form label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ---------------- BLOG ---------------- */
+article {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #eef;
+    border-left: 5px solid #88f;
+    border-radius: 5px;
+}
+
+/* ---------------- FAQ ---------------- */
+details {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #ccc;
+}
+
+/* ---------------- GALLERY ---------------- */
+figure {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+figcaption {
+    font-style: italic;
+    color: #666;
+}
+
+/* ---------------- MEDIA ---------------- */
+iframe {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    background-color: #1e1e2f;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 4px solid #555;
+}
+
+footer a {
+    color: #ffa;
+    text-decoration: none;
+}
+.secc aside {
+    height: 300px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.secc aside article{
+    height: 100px;
+    width: 200px;
+    text-align: center;
+}
