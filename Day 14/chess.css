@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    border: 2px solid black;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container div{
+    height: 75px;
+    width: calc(100%/8);
+    font-size: 60px;
+    text-align: center;
+}
+
+.white{
+    background-color: #f0d9b5;
+}
+
+.black{
+    background-color: #b58863;
+}
