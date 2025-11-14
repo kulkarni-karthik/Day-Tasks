@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Output is printed in Console.</h1>
+    <script>
+      // 1.	Group students based on Marks
+      // a.	Input: [40, 85, 90, 33, 72]	Output: Pass: >= 40, Fail < 40.
+
+      let marks = [40, 85, 90, 33, 72, 25, 60, 39];
+      let pass = marks.filter((mark) => mark >= 40);
+      let fail = marks.filter((mark) => mark < 40);
+      console.log("pass marks:" + pass);
+      console.log("fail marks:" + fail);
+
+      //2.	Count how many numbers in an array are greater than 50.
+
+      let number = [23, 26, 28, 10, 20, 24, 46];
+      let above50 = number.filter((num) => num > 50);
+      let below50 = number.filter((num) => num < 50);
+      console.log("numbers greater than 50:" + above50);
+      console.log("numbers less than 50:" + below50);
+
+      // 3.	Find all Prime numbers in an array
+
+      let numbers = [10, 20, 23, 24, 26, 28, 46, 11, 20, 49, 27];
+
+      function isprime(num) {
+        if (num <= 1) return false;
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+          if (num % i === 0) return false;
+        }
+        return true;
+      }
+      let primes = numbers.filter(isprime);
+      console.log("prime numbers in the array:" + primes);
+
+      // 4.	Swap the First and last element of an array
+
+      let arr = [10, 23, 24, 26, 28];
+      let firstElement = arr[0];
+      let lastElement = arr[arr.length - 1];
+      arr[0] = lastElement;
+      arr[arr.length - 1] = firstElement;
+      console.log("Array after swapping first and last elements: " + arr);
+
+      // 5.	Find the second highest number in an array
+
+      let nums = [10, 23, 24, 26, 28, 46];
+      nums.sort((a, b) => b - a);
+      let secondhighest = nums[1];
+      console.log("second highest number in the array:" + secondhighest);
+
+      //6.	Move all zeros to the end of the array
+      // Input [1,0,5,0,9], Output [1,5,9,0,0]
+
+      let arrays = [1, 0, 5, 0, 9];
+      let result = arrays
+        .filter((n) => n !== 0)
+        .concat(arrays.filter((n) => n === 0));
+      console.log("Zeros moves end:", result);
+    </script>
+  </body>
+</html>
