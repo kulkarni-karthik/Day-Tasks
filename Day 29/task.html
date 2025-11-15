@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Output is printed in console</h1>
+    <script>
+      // 1) Remove duplicates from an array
+      let arr = [1, 2, 3, 4, 5, 2, 3];
+
+      function removeDuplicates(arr) {
+        return [...new Set(arr)];
+      }
+      console.log("removeDuplicates:", removeDuplicates(arr));
+
+      // 2) Find the longest word in an array of strings
+
+      let words = ["apple", "banana", "grapes", "Watermelon", "Dragonfruit"];
+
+      function LongestWord(words) {
+        if (words.length === 0) return null;
+        let longest = words[0];
+        for (let i = 1; i < words.length; i++) {
+          if (words[i].length > longest.length) longest = words[i];
+        }
+        return longest;
+      }
+      console.log("Longestword:", LongestWord(words));
+
+      // 3) Convert string to array
+
+      let str = ["Java Script html css"];
+      function stringToWords(str) {
+        if (typeof str !== "string") return [];
+        return str.split(" ").filter(Boolean);
+      }
+      console.log(stringToWords("Java Script html css"));
+
+      function stringToChars(str) {
+        return Array.from(str);
+      }
+
+      console.log(stringToChars("Java Script html css"));
+    </script>
+  </body>
+</html>
