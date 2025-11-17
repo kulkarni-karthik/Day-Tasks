@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Show / Hide Paragraph</title>
+  <link rel="stylesheet" href="./para.css">
+</head>
+<body>
+
+  <button onclick="toggleParagraph()">Show / Hide Paragraph</button>
+
+  <p id="text">This is a  paragraph that can be shown or hidden using JavaScript.</p>
+
+  <script>
+    function toggleParagraph() {
+      const para = document.getElementById('text');
+
+      if (para.style.display === 'none') {
+        para.style.display = 'block';
+      } else {
+        para.style.display = 'none';
+      }
+    }
+  </script>
+
+</body>
+</html>
