@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 1. Increase and decrease the font Size. Take p element and 2 buttons. 
+     2. QR Code Generator – Here Input value to generate the QA Code. 
+     3. Live Search Filter – We will have input with list of items. 
+     4. Accordion FAQ (Toggle Panels) -->
+
+    <h1>Increase and decrease the font Size:</h1>
+    <br /><br />
+
+    <p id="font">Font Size</p>
+
+    <div class="buttons">
+      <button id="increase"><strong>Increase + </strong></button
+      >&nbsp;&nbsp;&nbsp;
+      <button id="decrease"><strong>Decrease - </strong></button>
+    </div>
+
+    <script>
+      //1.Increase and decrease the font Size,Take p element and 2 buttons.
+
+      let size = 40;
+      const text = document.getElementById("font");
+
+      document
+        .getElementById("increase")
+        .addEventListener("click", function () {
+          size++;
+          updateCounterDisplay();
+        });
+
+      document
+        .getElementById("decrease")
+        .addEventListener("click", function () {
+          size--;
+          updateCounterDisplay();
+        });
+
+      function updateCounterDisplay() {
+        text.style.fontSize = size + "px";
+        document.getElementById("value").textContent = size;
+      }
+    </script>
+  </body>
+</html>

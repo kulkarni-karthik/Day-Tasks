@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion FAQ</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: coral;
+      }
+      h2 {
+        text-align: center;
+      }
+      .ques {
+        background-color: burlywood;
+        cursor: pointer;
+        padding: 10px;
+        width: 1350px;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 20px;
+        transition: background-color 0.3s;
+      }
+      .ques.active,
+      .ques:hover {
+        background-color: #ccc;
+      }
+      .ans {
+        padding: 0 20px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+      }
+    </style>
+
+    <h2>Accordion FAQ</h2>
+
+    <button class="ques">What is JavaScript?</button>
+    <div class="ans">
+      <p>
+        JavaScript is a programming language used to make web pages interactive.
+      </p>
+    </div>
+
+    <button class="ques">What is DOM?</button>
+    <div class="ans">
+      <p>
+        The DOM (Document Object Model) represents the structure of a webpage.
+      </p>
+    </div>
+
+    <button class="ques">What is an Event Listener?</button>
+    <div class="ans">
+      <p>
+        An event listener waits for user actions like clicks or key presses.
+      </p>
+    </div>
+
+    <script>
+      //4.Accordion FAQ (Toggle Panels).
+
+      const accordions = document.querySelectorAll(".ques");
+      accordions.forEach((acc) => {
+        acc.addEventListener("click", function () {
+          this.classList.toggle("active");
+          const panel = this.nextElementSibling;
+          panel.style.display =
+            panel.style.display === "block" ? "none" : "block";
+        });
+      });
+    </script>
+  </body>
+</html>
