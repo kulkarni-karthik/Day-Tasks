@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Logout</title>
+
+    <style>
+      .log {
+        padding: 20px;
+        background-color: white;
+      }
+
+      .log h1 {
+        color: #333;
+        text-align: center;
+      }
+
+      .log p {
+        font-size: 20px;
+        color: #333;
+        text-align: center;
+      }
+
+      .signal {
+        width: 120px;
+        height: 320px;
+        background-color: black;
+        padding: 20px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 50px auto;
+      }
+
+      .light {
+        width: 80px;
+        height: 80px;
+        background-color: #555;
+        border-radius: 50px;
+        margin: auto;
+        transition: 0.3s;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="log">
+      <h1>Auto Logout after 30 seconds</h1>
+      <p>You will get a warning before 5 seconds for logging out..</p>
+    </div>
+
+    <!-- Traffic Signal -->
+
+    <div class="signal">
+      <div id="red" class="light"></div>
+      <div id="yellow" class="light"></div>
+      <div id="green" class="light"></div>
+    </div>
+
+    <script>
+      let logoutTime = 30;
+      let warningTime = 25;
+      let timer = 0;
+
+      const interval = setInterval(() => {
+        timer++;
+
+        if (timer == warningTime) {
+          alert("You will be logged out in 5 seconds!");
+        }
+
+        if (timer == logoutTime) {
+          clearInterval(interval);
+          alert("Logging out...");
+        }
+      }, 1000);
+
+      // Traffic Signal
+
+      let lights = ["red", "yellow", "green"];
+      let index = 0;
+
+      function changeLight() {
+        lights.forEach((color) => {
+          document.getElementById(color).style.backgroundColor = "#555";
+        });
+
+        if (lights[index] == "red") {
+          document.getElementById("red").style.backgroundColor = "red";
+        } else if (lights[index] == "yellow") {
+          document.getElementById("yellow").style.backgroundColor = "yellow";
+        } else if (lights[index] == "green") {
+          document.getElementById("green").style.backgroundColor = "green";
+        }
+
+        index = (index + 1) % 3;
+      }
+
+      setInterval(changeLight, 1000);
+    </script>
+  </body>
+</html>
