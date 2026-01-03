@@ -1,0 +1,176 @@
+body{
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0px 40px;
+}
+
+header{
+  text-align: center;
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li{
+  list-style: none;
+}
+
+nav a{
+  margin: 0 10px;
+  color: #3366cc;
+}
+
+/* About Section */
+
+.about{
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-text{
+  width: 50%;
+}
+
+.left-text p{
+  line-height: 25px;
+  word-spacing: 2px;
+}
+
+.left-text li{
+  line-height: 30px;
+}
+
+.right-map{
+  width: 45%;
+}
+
+.right-map iframe {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ccc;
+}
+
+.right-map button{
+  padding: 15px;
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid rgb(120, 120, 230);
+  letter-spacing: 1.2px;
+  cursor: pointer;
+}
+
+/* To-Do Section */
+
+.to-do{
+  display: flex;
+  justify-content: space-between;
+}
+
+.list{
+  width: 50%;
+  height: auto;
+}
+
+.list input, textarea {
+  width: 80%;
+  margin-bottom: 8px;
+  padding: 5px 0px;
+}
+
+.list button {
+  background: #2f5fb3;
+  color: white;
+  border: none;
+  padding: 6px 18px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.note {
+  background: #fff7cc;
+  padding: 6px;
+}
+
+.time{
+  width: 45%;
+}
+
+.time h3{
+  text-align: center;
+}
+
+.btn button{
+  background: #2f5fb3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Form Section */
+
+.time1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.lefttime{
+  width: 50%;
+}
+
+.form{
+  width: 45%;
+}
+
+.rightform input, textarea{
+  display: flex;
+  width: 80%;
+  margin-bottom: 8px;
+  padding: 5px 0px;
+}
+
+.rightform small {
+  color: red;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+}
+
+/* Map2 Section */
+
+.box-map1{
+  width: 45%;
+}
+
+.box-map1 img {
+  width: 500px;
+  height: 300px;
+  border: 1px solid #ccc;
+}
+
+.box-map1 img:hover{
+  cursor: pointer;
+}
+
+.box-map1 button{
+  padding: 15px;
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid rgb(120, 120, 230);
+  letter-spacing: 1.2px;
+  cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+

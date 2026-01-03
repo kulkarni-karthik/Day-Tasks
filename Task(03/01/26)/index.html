@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Web Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Interactive Web Project</h1>
+      <hr />
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Dynamic</a></li>
+          <li><a href="#">Timer</a></li>
+          <li><a href="#">Contact Form</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+
+    <main>
+      <!-- About Section -->
+
+      <section class="about">
+        <div class="left-text">
+          <h2>About This Project</h2>
+          <hr />
+          <p>
+            This is a sample interactive web page built using HTML and
+            JavaScript. <br />
+            It features dynamic content manipulation, <br />
+            form validation, and local storage.
+          </p>
+          <h4>Features Demonstrated:</h4>
+          <ul>
+            <li>DOM manipulation</li>
+            <li>Form validation</li>
+            <li>Event-handling</li>
+            <li>Dynamic content-updates</li>
+            <li>Local Storage</li>
+          </ul>
+        </div>
+
+        <!-- Map -->
+
+        <div class="right-map">
+          <div class="box-map">
+            <iframe
+              src="https://www.google.com/maps?q=San+Francisco&output=embed"
+            ></iframe>
+            <button class="btn" onclick="toggleMap()">Toggle Map</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- To-Do section -->
+
+      <section class="to-do">
+        <div class="list">
+          <h2>Interactive To-Do List</h2>
+          <hr />
+          <input type="text" id="taskInput" placeholder=" New Task..." />
+          <button onclick="addTask()">Add</button>
+
+          <ul id="taskList"></ul>
+          <p class="note">Tasks are saved in your browser's local storage.</p>
+          <button onclick="clearTasks()">Clear All Tasks</button>
+        </div>
+
+        <div class="time">
+          <h2>Auto-Updating Timer</h2>
+          <hr />
+          <p>This counter auto-updates every second:</p>
+          <h3 id="timer">Time elapsed: 00:00:00</h3>
+          <div class="btn">
+            <button onclick="pauseTimer()">Pause Timer</button>
+            <button onclick="resetTimer()">Reset Timer</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Form Section -->
+
+      <section class="time1">
+        <div class="left-time">
+          <h2>Auto-Updating Timer</h2>
+          <hr />
+          <p>This counter auto-updates every second:</p>
+          <h3 id="timer">Time elapsed: 00:00:00</h3>
+          <div class="btn">
+            <button onclick="pauseTimer()">Pause Timer</button>
+            <button onclick="resetTimer()">Reset Timer</button>
+          </div>
+
+          <section class="Feat">
+            <h2>Feat Hesions & Videos</h2>
+            <div class="box-map1">
+              <img onclick="openMap()" src="image.png" alt="" />
+              <button class="btn" onclick="toggleMap()">Toggle Map</button>
+            </div>
+          </section>
+        </div>
+
+        <div class="form">
+          <h2>Contact Form</h2>
+          <hr />
+          <h4>Send me a message:</h4>
+          <form onsubmit="saveForm(event)" class="rightform">
+            <label>Name:</label>
+            <input type="text" id="name" />
+            <small id="nameErr">Please enter your name.</small>
+            <hr />
+            <br />
+
+            <label>Email:</label>
+            <input type="email" id="email" />
+            <small id="emailErr">Please enter valid email address</small>
+            <hr />
+            <br />
+
+            <label>Password:</label>
+            <input type="password" id="password" />
+            <small id="passErr"
+              >Password must be atleast 6 characters long</small
+            >
+            <hr />
+            <br />
+
+            <label>Message:</label>
+            <textarea type="text" name="" id="message"></textarea>
+
+            <div class="check">
+              <p>
+                <input type="checkbox" />Subscribe to newsletter?
+                <input type="checkbox" /> Yes <input type="checkbox" /> No
+              </p>
+
+              <p>
+                Preferred Contact: <input type="checkbox" /> Email
+                <input type="checkbox" /> Phone
+              </p>
+            </div>
+
+            <button type="submit">Submit</button>
+            <button type="button" onclick="clearForm()">Clear Data</button>
+
+            <p class="success" id="formMsg"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        © 2024 <b>Interactive Web Project</b> | Your email: user@example.com
+      </p>
+      <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
